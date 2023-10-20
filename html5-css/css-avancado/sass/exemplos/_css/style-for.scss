@@ -1,0 +1,39 @@
+@import 'base';
+
+$cor2: lightgrey;
+$background: grey;
+
+@mixin fundoP($color) {
+    background-color: $color;
+}
+
+body {
+    @include fundoP($background);
+    @if($background == grey) {
+        color: #{$cor2};
+        font-size: 20px;
+    } @else {
+        color: darkblue;
+        background-color: lightskyblue;
+    }
+    color: $cor2;
+    margin: 10%;
+}
+
+p {
+    //background-color: red;
+    b {
+        color: rgb(0, 255, 64);
+    }
+}
+
+$corDiv: red;
+$tamanho: 12px;
+
+@for $i from 1 through 3 {
+	$nome: '#id-' + $i;
+	#{$nome} {
+	  font-size: $tamanho + ($i * 4);
+      background-color: lighten($corDiv, $i * 15%);
+	}
+}

@@ -1,0 +1,30 @@
+@blue: blue;
+@cinza_claro: rgb(210, 212, 208);
+@tamanho: 23px;
+
+
+body {
+    background-color: @cinza_claro;
+}
+
+h1 {
+    .cores('h1'); 
+}
+
+p {
+    .cores('p');
+}
+
+.cores(@tag){
+    color: @blue * 0.5;   
+
+    & when (@tag = 'p') {
+        font-size: @tamanho * 1.23;
+    } 
+
+    & when (@tag = 'h1') {
+        text-shadow: 2px 1px 1px #7a7b7c;
+        font-size: @tamanho + 27px;
+    } 
+
+}

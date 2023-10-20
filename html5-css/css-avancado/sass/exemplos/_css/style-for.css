@@ -1,0 +1,36 @@
+h1 {
+  color: lightblue;
+}
+
+.sombra {
+  text-shadow: 2px 1px 1px #ccc;
+  text-decoration: underline;
+  color: lightblue;
+}
+
+body {
+  background-color: grey;
+  color: lightgrey;
+  font-size: 20px;
+  color: lightgrey;
+  margin: 10%;
+}
+
+p b {
+  color: rgb(0, 255, 64);
+}
+
+#id-1 {
+  font-size: 16px;
+  background-color: #ff4d4d;
+}
+
+#id-2 {
+  font-size: 20px;
+  background-color: #ff9999;
+}
+
+#id-3 {
+  font-size: 24px;
+  background-color: #ffe6e6;
+}/*# sourceMappingURL=style-for.css.map */

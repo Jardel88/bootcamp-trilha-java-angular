@@ -1,0 +1,21 @@
+@blue: blue;
+@green: green;
+@white: white;
+
+.drop-shadow {
+    text-shadow: 2px 1px 1px #ccc;
+    text-decoration: underline;
+}
+
+h1 {
+    color: @blue;
+}
+
+//Hierarquia
+p {
+    color: @blue;
+    b {
+        color: @white;
+        background-color: @green;
+    }
+}

@@ -1,0 +1,24 @@
+h1 {
+  color: lightblue;
+}
+
+.sombra {
+  text-shadow: 2px 1px 1px #ccc;
+  text-decoration: underline;
+  color: lightblue;
+}
+
+body {
+  background-color: grey;
+  color: lightgrey;
+  font-size: 20px;
+  color: lightgrey;
+  margin: 10%;
+}
+
+p {
+  background-color: red;
+}
+p b {
+  color: rgb(0, 255, 64);
+}/*# sourceMappingURL=variaveis-hierarquia.css.map */

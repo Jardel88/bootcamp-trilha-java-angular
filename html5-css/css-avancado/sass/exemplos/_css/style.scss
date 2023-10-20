@@ -1,0 +1,29 @@
+@import 'base';
+
+$cor2: lightgrey;
+$background: grey;
+$tamanho: 20;
+
+@mixin fundoP($color) {
+    background-color: $color;
+}
+
+body {
+    @include fundoP($background);
+    @if($background == grey) {
+        color: #{$cor2};
+        font-size: #{$tamanho+px};
+    } @else {
+        color: darkblue;
+        background-color: lightskyblue;
+    }
+    color: $cor2;
+    margin: 10%;
+}
+
+p {
+    background-color: red;
+    b {
+        color: rgb(0, 255, 64);
+    }
+}

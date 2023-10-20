@@ -1,0 +1,16 @@
+@blue: blue;
+@width: 0.15;
+@test: verdee;
+
+body {
+    background-color: rgb(210, 212, 208);
+}
+
+h1 {
+    color: @blue;
+}
+
+p {
+    color: if(iscolor(@test), @test, red);
+    width: percentage(@width);
+}

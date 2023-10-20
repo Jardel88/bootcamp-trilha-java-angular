@@ -1,0 +1,42 @@
+$color-black: black;
+$color-white: white;
+$color-standard-gray: #CCC;
+
+@mixin formatacaoH1($tag){
+	@if($tag == 'h1'){
+		color: $color-standard-gray;
+		font-size: 2.5em;
+	}
+
+	@if($tag == 'h2'){
+		color: $color-white;
+	}
+
+	@if($tag == 'h3'){
+		color: $color-white;
+		background: $color-black;
+		padding: 5px;
+	}
+}
+
+/*
+**** Formatações em geral ****
+*/
+h1 {
+	@include formatacaoH1('h1');
+}
+
+h2 {
+	@include formatacaoH1('h2');
+}
+
+h3 {
+	@include formatacaoH1('h3');
+}
+
+@for $i from 1 through 5 {
+	$nome: '#id-' + $i;
+	#{$nome} {
+		background-color: lighten($color-black, $i * 10%);
+	}
+}

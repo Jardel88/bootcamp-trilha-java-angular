@@ -1,0 +1,11 @@
+$cor: lightblue;
+
+h1 {
+    color: $cor;
+}
+
+.sombra {
+    text-shadow: 2px 1px 1px #ccc;
+    text-decoration: underline;
+    color: $cor;
+}

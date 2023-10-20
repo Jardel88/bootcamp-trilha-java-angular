@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento alteração</title>
+    <!-- JS -->
+    <script>
+
+        /*
+            onKeyUp: Exibe o caractere e depois executa a ação.
+            onKeyDown: Executa a ação e depois exibe o caractere.
+            onKeyPress: Executa a ação e depois exibe o caractere, não tem suporte a teclas especiais.   
+        */
+        function exibir(){
+            var campo = document.getElementById("campo").value;
+
+            alert(campo);
+        }
+    </script>
+</head>
+<body>
+   <input type="text" id="campo" onkeyup="exibir()">
+</body>
+</html>
